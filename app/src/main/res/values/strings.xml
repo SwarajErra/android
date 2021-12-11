@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">GetJob_Andriod</string>
+
+// launch screen
+    <string name="launch_logo">GetJob Logo</string>
+    <string name="launch_text">GetJob</string>
+
+// selection screen
+    <string name="titlabar_logo">GetJob</string>
+    <string name="emplyee_logo">GetJob</string>
+    <string name="company_logo">PostJob</string>
+
 </resources>
