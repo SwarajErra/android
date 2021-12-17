@@ -137,7 +137,6 @@
             android:layout_marginTop="30dp"
             android:text="post job"
             android:textColor="#757575"
-            app:backgroundTint="@color/material_dynamic_primary100"
             />
 
 

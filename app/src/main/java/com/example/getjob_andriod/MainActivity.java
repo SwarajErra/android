@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Animation topanim,bottomanim;
     ImageView image;
     TextView logo;
-   
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
