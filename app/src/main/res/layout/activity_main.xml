@@ -29,12 +29,11 @@
             android:id="@+id/textView"
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:fontFamily="@font/baumans"
-            android:onClick="s"
-            android:text="@string/launch_text"
             android:textAlignment="center"
-            android:textColor="#16C369"
+            android:fontFamily="@font/baumans"
             android:textSize="45dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:text="@string/launch_text"
+            android:textColor="#16C369" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
