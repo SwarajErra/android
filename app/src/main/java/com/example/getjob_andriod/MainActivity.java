@@ -10,24 +10,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-<<<<<<< Updated upstream
     Animation topanim,bottomanim;
     ImageView image;
     TextView logo;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-=======
-Animation topanim,bottomanim;
-ImageView image;
-TextView logo;
-
+   
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
->>>>>>> Stashed changes
         setContentView(R.layout.activity_main);
 
         topanim = AnimationUtils.loadAnimation(this,R.anim.top_animation);
@@ -38,9 +28,5 @@ TextView logo;
 
         image.setAnimation(topanim);
         logo.setAnimation(bottomanim);
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
     }
 }
