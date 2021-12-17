@@ -4,15 +4,25 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/2091889/Documents/GitHub/android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.25625" />
-        <entry key="..\:/Users/2091889/Documents/GitHub/android/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/2091889/Documents/GitHub/android/app/src/main/res/layout/apply_screen.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/2091889/Documents/GitHub/android/app/src/main/res/layout/home_screen.xml" value="0.264" />
-        <entry key="..\:/Users/2091889/Documents/GitHub/android/app/src/main/res/layout/job_card.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/2091889/Documents/GitHub/android/app/src/main/res/layout/layout.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/2091889/Documents/GitHub/android/app/src/main/res/layout/selection_screen.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/drawable/email.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/drawable/location.xml" value="0.12361111111111112" />
+<<<<<<< Updated upstream
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/drawable/password.xml" value="0.1300925925925926" />
         <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/activity_main.xml" value="0.20153985507246377" />
-        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/selection_screen.xml" value="0.16225165562913907" />
-        <entry key="..\:/Users/hayer/Desktop/android/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/apply_screen.xml" value="0.10925925925925926" />
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/createjob_screen.xml" value="0.2" />
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/home_screen.xml" value="0.10925925925925926" />
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/job_card.xml" value="0.11200000000000002" />
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/postjob_screen.xml" value="0.1408514492753623" />
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/resume_screen.xml" value="0.10925925925925926" />
+=======
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/activity_main.xml" value="0.20153985507246377" />
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/createjob_screen.xml" value="0.2" />
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/postjob_screen.xml" value="0.1408514492753623" />
+>>>>>>> Stashed changes
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/selection_screen.xml" value="0.136" />
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/signin_screen.xml" value="0.176" />
+        <entry key="..\:/Users/KRINESH PATEL/Desktop/sem4/android/android/app/src/main/res/layout/signup_screen.xml" value="0.152" />
       </map>
     </option>
   </component>
@@ -21,12 +31,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.264" />
-      </ProjectState>
-    </option>
   </component>
 </project>

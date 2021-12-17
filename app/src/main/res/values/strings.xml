@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">GetJob_Andriod</string>
+    <string name="app_name" translatable="false">GetJob_Andriod</string>
 
 // launch screen
-    <string name="launch_logo">GetJob Logo</string>
-    <string name="launch_text">GetJob</string>
+    <string name="launch_logo" translatable="false">GetJob Logo</string>
+    <string name="launch_text" translatable="false">GetJob</string>
 
 // selection screen
-    <string name="titlabar_logo">GetJob</string>
-    <string name="emplyee_logo">GetJob</string>
-    <string name="company_logo">PostJob</string>
+    <string name="titlabar_logo" translatable="false">GetJob</string>
+    <string name="emplyee_logo" translatable="false">GetJob</string>
+    <string name="company_logo" translatable="false">PostJob</string>
 
 </resources>
