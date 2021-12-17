@@ -2,31 +2,49 @@ package com.example.getjob_andriod;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
-import android.view.WindowManager;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import android.content.Intent;
+import android.view.View;
+import android.view.View.OnClickListener;
 public class MainActivity extends AppCompatActivity {
     Animation topanim,bottomanim;
     ImageView image;
     TextView logo;
-
+    Button button;
+    TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.postjob_screen);
-//
-//        topanim = AnimationUtils.loadAnimation(this,R.anim.top_animation);
-//        bottomanim = AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
-//
-//        image = findViewById(R.id.imageView);
-//        logo = findViewById(R.id.textView);
-//
-//        image.setAnimation(topanim);
-//        logo.setAnimation(bottomanim);
+        setContentView(R.layout.activity_main);
+        addListenerOnButton();
+
     }
+    public void addListenerOnButton() {
+
+        final Context context = this;
+
+//        button = (Button) findViewById(R.id.button1);
+
+
+        textView = (TextView) findViewById(R.id.textView);
+        textView.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(context, loginActivity.class);
+                startActivity(intent);
+
+            }
+
+        });
+
+    }
+
 }

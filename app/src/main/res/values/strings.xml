@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name" translatable="false">GetJob_Andriod</string>
 
-// launch screen
+    // launch screen
     <string name="launch_logo" translatable="false">GetJob Logo</string>
     <string name="launch_text" translatable="false">GetJob</string>
 
-// selection screen
+    // selection screen
     <string name="titlabar_logo" translatable="false">GetJob</string>
     <string name="emplyee_logo" translatable="false">GetJob</string>
     <string name="company_logo" translatable="false">PostJob</string>
