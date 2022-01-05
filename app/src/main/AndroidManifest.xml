@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GetJob_Andriod">
         <activity
+            android:name=".applyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".postJobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".getJobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Selection"
+            android:exported="false" />
+        <activity
             android:name=".loginActivity"
             android:exported="false" />
         <activity

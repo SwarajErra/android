@@ -7,31 +7,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
-public class loginActivity extends AppCompatActivity {
-    Button button;
+public class getJobActivity extends AppCompatActivity {
 
+    Button applyJobButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signin_screen);
-        signIn();
+        setContentView(R.layout.home_screen);
+        applyJob();
     }
 
-    public void signIn() {
-
+    public void applyJob() {
         final Context context = this;
-        button = (Button) findViewById(R.id.signIn);
-        button.setOnClickListener(new View.OnClickListener() {
-
+        applyJobButton = (Button) findViewById(R.id.ApplyButton);
+        applyJobButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, Selection.class);
+                Intent intent = new Intent(context, applyActivity.class);
                 startActivity(intent);
             }
-
         });
-
     }
+
 }

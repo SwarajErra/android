@@ -68,7 +68,9 @@
             android:layout_marginTop="20dp"
             android:orientation="vertical">
 
-            <include layout="@layout/job_card"/>
+            <include
+                android:id="@+id/applyButton"
+                layout="@layout/job_card" />
             <include layout="@layout/job_card"/>
             <include layout="@layout/job_card"/>
             <include layout="@layout/job_card"/>

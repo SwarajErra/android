@@ -29,7 +29,7 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/Radiobutton1"
+                android:id="@+id/getJob"
                 android:layout_width="180dp"
                 android:layout_height="200dp"
                 android:layout_marginBottom="40dp"
@@ -47,7 +47,7 @@
                 android:background="@android:color/black" />
 
             <RadioButton
-                android:id="@+id/Radiobutton2"
+                android:id="@+id/postJob"
                 android:layout_marginBottom="40dp"
                 android:layout_width="180dp"
                 android:layout_height="200dp"
