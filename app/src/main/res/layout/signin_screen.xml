@@ -38,6 +38,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:contentDescription="signin"
+            app:srcCompat="@drawable/login"
              />
 
         <TextView
