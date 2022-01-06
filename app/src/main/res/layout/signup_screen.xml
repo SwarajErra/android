@@ -142,7 +142,7 @@
             android:layout_marginTop="30dp"
             app:rippleColor="@color/button_colour"
             android:text="@string/sign_up"
-            android:textColor="#757575"
+            android:textColor="#FFFFFF"
             tools:ignore="DuplicateSpeakableTextCheck" />
 
     </LinearLayout>

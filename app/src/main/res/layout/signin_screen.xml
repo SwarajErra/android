@@ -107,8 +107,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:text="@string/signup"
-            android:textColor="#757575"
+            android:text="@string/sign_text"
+            android:textColor="#FFFFFF"
             />
 
         <Button
