@@ -36,8 +36,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:layout_marginTop="100dp"
-            android:contentDescription="SignIn"
+            android:layout_marginTop="@+id/imageView3"
+            android:contentDescription="@string/signin"
             app:srcCompat="@drawable/login" />
 
         <TextView
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
-            android:text="Sign In"
+            android:text="@string/sign_text"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="35sp"
@@ -58,13 +58,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:hint="Email Id"
             app:counterEnabled="true"
             app:counterMaxLength="18"
             app:endIconMode="clear_text"
             app:helperText="Required"
             app:helperTextTextColor="#FF0000"
             app:placeholderText="abc@abc.com"
+            android:hint="@string/emailid"
             app:startIconCheckable="false"
             app:startIconDrawable="@drawable/email">
 
@@ -83,12 +83,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:hint="Password"
             app:counterEnabled="true"
             app:counterMaxLength="12"
             app:endIconMode="password_toggle"
             app:helperText="enter strong password"
             app:helperTextTextColor="#EB21B65D"
+            android:hint="@string/password"
             app:startIconCheckable="false"
             app:startIconDrawable="@drawable/password">
 
@@ -106,8 +106,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:text="sign In"
-            android:textColor="#FFFFFF"
+            android:text="@string/signup"
+            android:textColor="#757575"
             />
 
         <Button

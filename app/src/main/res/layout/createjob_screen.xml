@@ -14,7 +14,7 @@
         android:layout_width="170dp"
         android:layout_height="75dp"
         android:contentDescription="@string/titlabar_logo"
-        android:layout_gravity="left"
+        android:layout_gravity="start"
         android:src="@drawable/titlebar_logo"
         tools:ignore="MissingConstraints" />
 
@@ -75,7 +75,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:hintTextColor="#757575" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

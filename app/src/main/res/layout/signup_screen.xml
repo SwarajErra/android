@@ -36,8 +36,8 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
-            android:layout_marginTop="100dp"
-            android:contentDescription="SignUp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/signup_dis"
             app:srcCompat="@drawable/signup" />
 
         <TextView
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
-            android:text="Sign up"
+            android:text="@string/signup_text"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="35sp"
@@ -58,13 +58,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:hint="Email Id"
             app:counterEnabled="true"
             app:counterMaxLength="18"
             app:endIconCheckable="true"
             app:endIconMode="clear_text"
             app:helperText="Required"
             app:helperTextTextColor="#FF0000"
+            android:hint="@string/emailid"
             app:startIconCheckable="false"
             app:startIconDrawable="@drawable/email">
 
@@ -72,7 +72,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:inputType="textWebEmailAddress" />
+                android:inputType="textWebEmailAddress"
+                android:hintTextColor="#757575"
+                tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -83,13 +85,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:hint="Password"
             app:counterEnabled="true"
             app:counterMaxLength="12"
             app:endIconCheckable="true"
             app:endIconMode="password_toggle"
             app:helperText="enter strong password"
             app:helperTextTextColor="#00D616"
+            android:hint="@string/password"
             app:startIconCheckable="false"
             app:startIconDrawable="@drawable/password">
 
@@ -98,7 +100,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:inputType="textPassword"
-                app:textInputLayoutFocusedRectEnabled="true" />
+                app:textInputLayoutFocusedRectEnabled="true"
+                android:hintTextColor="#757575"
+                tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -108,13 +112,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:hint="Confirm Password"
             app:counterEnabled="true"
             app:counterMaxLength="12"
             app:endIconCheckable="true"
             app:endIconMode="password_toggle"
             app:helperText="enter same password"
             app:helperTextTextColor="#00D616"
+            android:hint="@string/confirm_password"
             app:startIconCheckable="false"
             app:startIconDrawable="@drawable/password">
 
@@ -123,20 +127,23 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:inputType="textPassword"
-                app:textInputLayoutFocusedRectEnabled="true" />
+                app:textInputLayoutFocusedRectEnabled="true"
+                android:hintTextColor="#757575"
+                tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
+
             android:id="@+id/signUp"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:text="sign up"
-            android:textColor="#FFFFFF"
-            app:rippleColor="@color/button_colour" />
-
+            app:rippleColor="@color/button_colour"
+            android:text="@string/sign_up"
+            android:textColor="#757575"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

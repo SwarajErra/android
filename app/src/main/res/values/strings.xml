@@ -1,13 +1,30 @@
 <resources>
-    <string name="app_name" translatable="false">GetJob_Andriod</string>
+    <string name="app_name">GetJob_Andriod</string>
 
-    // launch screen
-    <string name="launch_logo" translatable="false">GetJob Logo</string>
-    <string name="launch_text" translatable="false">GetJob</string>
+// launch screen
+    <string name="launch_logo">GetJob Logo</string>
+    <string name="launch_text">GetJob</string>
 
-    // selection screen
-    <string name="titlabar_logo" translatable="false">GetJob</string>
-    <string name="emplyee_logo" translatable="false">GetJob</string>
-    <string name="company_logo" translatable="false">PostJob</string>
+// selection screen
+    <string name="titlabar_logo">GetJob</string>
+    <string name="emplyee_logo">GetJob</string>
+    <string name="company_logo">PostJob</string>
+
+// signin screen
+    <string name="signin">SignIn</string>
+    <string name="sign_text">Sign In</string>
+    <string name="emailid">Email Id</string>
+    <string name="password">Password</string>
+    <string name="signup">Sign Up</string>
+
+    // signin screen
+    <string name="signup_dis">Sign Up</string>
+    <string name="signup_text">Sign up</string>
+    <string name="confirm_password">confirm Password</string>
+    <string name="sign_up">Sign up</string>
+
+    //home screen
+    <string name="keyword_hint">Job Title,keywords or company</string>
+    <string name="filter_button">Find Jobs</string>
 
 </resources>

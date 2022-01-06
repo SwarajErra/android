@@ -31,9 +31,9 @@
             android:layout_height="50dp"
             android:textAlignment="center"
             android:fontFamily="@font/baumans"
-            android:textSize="45dp"
-            android:textStyle="bold"
             android:text="@string/launch_text"
-            android:textColor="#16C369" />
+            android:textColor="#43A047"
+            android:textSize="45sp"
+            android:textStyle="bold" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

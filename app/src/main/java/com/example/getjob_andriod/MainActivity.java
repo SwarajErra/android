@@ -11,7 +11,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -52,3 +51,4 @@ public class MainActivity extends AppCompatActivity {
       },SPLASH_TIME);
 
     }}
+

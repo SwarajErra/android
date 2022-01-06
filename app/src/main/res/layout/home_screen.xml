@@ -19,7 +19,7 @@
             android:id="@+id/imageView3"
             android:layout_width="183dp"
             android:layout_height="75dp"
-            android:layout_gravity="left"
+            android:layout_gravity="start"
             android:contentDescription="@string/titlabar_logo"
             app:srcCompat="@drawable/titlebar_logo" />
 
@@ -28,7 +28,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="40dp"
             android:orientation="vertical">
 
@@ -43,7 +43,7 @@
                     android:layout_width="250dp"
                     android:layout_marginLeft="25dp"
                     android:layout_height="wrap_content"
-                    android:hint="Job Title,keywords or company">
+                    android:hint="@string/keyword_hint">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="350dp"
@@ -56,11 +56,11 @@
                     android:id="@+id/searchButton"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
                     app:icon="@drawable/search_icon"
                     android:textColor="#000000"
                     style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
-                    />
+                    android:layout_marginStart="20dp"
+                    android:text="@string/filter_button" />
             </LinearLayout>
 
 
