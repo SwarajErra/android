@@ -36,7 +36,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="100dp"
             android:contentDescription="SignIn"
             app:srcCompat="@drawable/login" />
 
@@ -59,32 +59,44 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:hint="Email Id"
+            app:counterEnabled="true"
+            app:counterMaxLength="18"
+            app:endIconMode="clear_text"
+            app:helperText="Required"
+            app:helperTextTextColor="#FF0000"
+            app:placeholderText="abc@abc.com"
             app:startIconCheckable="false"
             app:startIconDrawable="@drawable/email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_height="wrap_content" />
+                android:inputType="textWebEmailAddress" />
 
         </com.google.android.material.textfield.TextInputLayout>
-
 
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/outlinedTextField1"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:hint="Password"
+            app:counterEnabled="true"
+            app:counterMaxLength="12"
+            app:endIconMode="password_toggle"
+            app:helperText="enter strong password"
+            app:helperTextTextColor="#EB21B65D"
             app:startIconCheckable="false"
             app:startIconDrawable="@drawable/password">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -94,9 +106,28 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:text="sign up"
-            android:textColor="#757575"
+            android:text="sign In"
+            android:textColor="#FFFFFF"
             />
+
+        <Button
+            android:id="@+id/textButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="new User!   "
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            />
+
+        <Button
+            android:id="@+id/textButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign with Google"
+            app:icon="@drawable/ic_google_icon"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        />
 
 
     </LinearLayout>

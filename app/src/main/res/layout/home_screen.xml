@@ -26,9 +26,9 @@
 
         <LinearLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="366dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="0dp"
             android:layout_marginTop="40dp"
             android:orientation="vertical">
 
@@ -40,12 +40,13 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/filledTextField"
-                    android:layout_width="225dp"
+                    android:layout_width="250dp"
+                    android:layout_marginLeft="25dp"
                     android:layout_height="wrap_content"
                     android:hint="Job Title,keywords or company">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="224dp"
+                        android:layout_width="350dp"
                         android:layout_height="match_parent" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -53,10 +54,13 @@
 
                 <Button
                     android:id="@+id/searchButton"
-                    android:layout_width="113dp"
+                    android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20dp"
-                    android:text="Find Jobs" />
+                    app:icon="@drawable/search_icon"
+                    android:textColor="#000000"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    />
             </LinearLayout>
 
 
