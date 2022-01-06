@@ -36,7 +36,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="100dp"
             android:contentDescription="@string/signup_dis"
             app:srcCompat="@drawable/signup" />
 
