@@ -36,9 +36,9 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:layout_marginTop="@+id/imageView3"
-            android:contentDescription="@string/signin"
-            app:srcCompat="@drawable/login" />
+            android:layout_marginTop="20dp"
+            android:contentDescription="signin"
+             />
 
         <TextView
             android:id="@+id/textView1"
@@ -111,7 +111,7 @@
             />
 
         <Button
-            android:id="@+id/textButton"
+            android:id="@+id/newUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
