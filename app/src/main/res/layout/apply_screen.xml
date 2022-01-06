@@ -20,7 +20,10 @@
             android:background="#4758AF"
             android:contentDescription="@string/titlabar_logo"
             app:srcCompat="@drawable/titlebar_logo" />
-
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="76dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -177,6 +180,7 @@
             </LinearLayout>
 
         </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
 

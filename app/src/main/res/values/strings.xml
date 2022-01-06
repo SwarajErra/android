@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name">GetJob_Andriod</string>
 
-// launch screen
+    // launch screen
     <string name="launch_logo">GetJob Logo</string>
     <string name="launch_text">GetJob</string>
 
-// selection screen
+    // selection screen
     <string name="titlabar_logo">GetJob</string>
     <string name="emplyee_logo">GetJob</string>
     <string name="company_logo">PostJob</string>
 
-// signin screen
+    // signin screen
     <string name="signin">SignIn</string>
     <string name="sign_text">Sign In</string>
     <string name="emailid">Email Id</string>
