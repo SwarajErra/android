@@ -1,7 +1,6 @@
 package com.example.getjob_andriod;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
