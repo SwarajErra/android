@@ -21,11 +21,11 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class loginActivity extends AppCompatActivity {
     EditText inputEmail,inputpassword;
-    Button signIn,newUser;
+    Button signIn,newUser,signWithGoogle;
     String emailPattern= "[a-zA-Z0-9._%+-]+@[A-Za-z.-]+\\.+[a-z]+";
     ProgressDialog progressDialog;
 
-    private FirebaseAuth mAuth;
+    FirebaseAuth mAuth;
     FirebaseUser mUser;
 
 
@@ -38,32 +38,39 @@ public class loginActivity extends AppCompatActivity {
         inputEmail=findViewById(R.id.inputLogEmail);
         inputpassword=findViewById(R.id.inputLogpassword);
         signIn=findViewById(R.id.signIn);
+        signWithGoogle=findViewById(R.id.signWithGoogle);
+        newUser=findViewById(R.id.newUser);
         progressDialog=new ProgressDialog(this);
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
 
+
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                newUser();
-                PerLogAuth();
 
+                PerLogAuth();
             }
         });
+
+        newUser.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(loginActivity.this,signUpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        signWithGoogle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(loginActivity.this,googlesignin.class);
+                startActivity(intent);
+            }
+        });
+
     }
-
-    private void newUser() {
-            final Context context = this;
-            newUser = (Button) findViewById(R.id.newUser);
-            newUser.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View arg0) {
-                    Intent intent = new Intent(context, signUpActivity.class);
-                    startActivity(intent);
-                }
-            });
-        }
-
 
 
     private void PerLogAuth() {
@@ -99,6 +106,8 @@ public class loginActivity extends AppCompatActivity {
         });
         }
     }
+
+
     private void sendUserToNextActivity() {
         Intent intent= new Intent(loginActivity.this,Selection.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);

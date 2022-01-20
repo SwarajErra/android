@@ -35,6 +35,7 @@ public class signUpActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         signUp = (Button) findViewById(R.id.signUp);
+        AlreadyAc=findViewById(R.id.AlreadyAc);
         inputEmail=findViewById(R.id.inputEmail);
         inputpassword=findViewById(R.id.inputpassword);
         inputconpassword=findViewById(R.id.inputconpassword);
@@ -46,24 +47,19 @@ public class signUpActivity extends AppCompatActivity {
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlreadyAc();
                 PerForAuth();
 
             }
         });
-    }
 
-    private void AlreadyAc() {
-            final Context context = this;
-            AlreadyAc = (Button) findViewById(R.id.AlreadyAc);
-            AlreadyAc.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View arg0) {
-                    Intent intent = new Intent(context, loginActivity.class);
-                    startActivity(intent);
-                }
-            });
-        }
+        AlreadyAc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(signUpActivity.this,loginActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 
     private void PerForAuth() {
         String email=inputEmail.getText().toString();
@@ -76,7 +72,7 @@ public class signUpActivity extends AppCompatActivity {
 
         }else if (password.isEmpty()||password.length()<8)
         {
-            inputpassword.setError("enter proper password");
+            inputpassword.setError("enter atleast 8 char password");
         }else if (!password.equals(conpassword)){
             inputconpassword.setError("password not matched");
         }else{
