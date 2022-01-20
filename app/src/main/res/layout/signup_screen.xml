@@ -10,6 +10,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="75dp"
+        android:background="@color/navi_bar"
         android:gravity="center"
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
@@ -25,8 +26,10 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
         android:orientation="vertical"
+        android:background="@color/app_backgound"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="76dp">
@@ -36,20 +39,10 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="40dp"
             android:contentDescription="@string/signup_dis"
-            app:srcCompat="@drawable/signup" />
+            app:srcCompat="@drawable/sign_up" />
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/signup_text"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="35sp"
-            android:textStyle="bold" />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -63,17 +56,20 @@
             app:endIconCheckable="true"
             app:endIconMode="clear_text"
             app:helperText="Required"
+            app:hintTextColor="@color/button_colour"
+            app:boxStrokeColor="@color/button_colour"
             app:helperTextTextColor="#FF0000"
             android:hint="@string/emailid"
             app:startIconCheckable="false"
             app:startIconDrawable="@drawable/email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:inputType="textWebEmailAddress"
 
+                android:inputType="textWebEmailAddress"
                 tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -86,6 +82,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             app:counterEnabled="true"
+            app:hintTextColor="@color/button_colour"
+            app:boxStrokeColor="@color/button_colour"
             app:counterMaxLength="12"
             app:endIconCheckable="true"
             app:endIconMode="password_toggle"
@@ -96,12 +94,13 @@
             app:startIconDrawable="@drawable/password">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputpassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:inputType="textPassword"
-                app:textInputLayoutFocusedRectEnabled="true"
 
+                app:textInputLayoutFocusedRectEnabled="true"
                 tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -115,6 +114,8 @@
             app:counterEnabled="true"
             app:counterMaxLength="12"
             app:endIconCheckable="true"
+            app:hintTextColor="@color/button_colour"
+            app:boxStrokeColor="@color/button_colour"
             app:endIconMode="password_toggle"
             app:helperText="enter same password"
             app:helperTextTextColor="#00D616"
@@ -123,12 +124,13 @@
             app:startIconDrawable="@drawable/password">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputconpassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:inputType="textPassword"
-                app:textInputLayoutFocusedRectEnabled="true"
 
+                app:textInputLayoutFocusedRectEnabled="true"
                 tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -140,10 +142,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            app:rippleColor="@color/button_colour"
+            android:backgroundTint="@color/button_colour"
             android:text="@string/sign_up"
             android:textColor="#FFFFFF"
             tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/AlreadyAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/button_colour"
+            android:text="Have Already Account"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

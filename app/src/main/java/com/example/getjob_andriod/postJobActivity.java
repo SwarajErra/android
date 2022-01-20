@@ -20,7 +20,7 @@ public class postJobActivity extends AppCompatActivity {
 
     public void postJob() {
         final Context context = this;
-        button = (Button) findViewById(R.id.postJobButton);
+        button = (Button) findViewById(R.id.signIn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {

@@ -10,6 +10,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="75dp"
+        android:background="@color/navi_bar"
         android:gravity="center"
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
@@ -25,7 +26,9 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:background="@color/app_backgound"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
@@ -36,40 +39,35 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="40dp"
             android:contentDescription="signin"
-            app:srcCompat="@drawable/login"
+            app:srcCompat="@drawable/signin"
              />
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/sign_text"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="35sp"
-            android:textStyle="bold" />
+
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/outlinedTextField"
+            android:id="@+id/inputEmail"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
+            android:hint="@string/emailid"
+            android:padding="10dp"
+            app:boxStrokeColor="@color/button_colour"
             app:counterEnabled="true"
             app:counterMaxLength="18"
             app:endIconMode="clear_text"
             app:helperText="Required"
             app:helperTextTextColor="#FF0000"
+            app:hintTextColor="@color/button_colour"
             app:placeholderText="abc@abc.com"
-            android:hint="@string/emailid"
             app:startIconCheckable="false"
             app:startIconDrawable="@drawable/email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputLogEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -84,16 +82,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:hint="@string/password"
+            android:padding="10dp"
+            app:boxStrokeColor="@color/button_colour"
             app:counterEnabled="true"
             app:counterMaxLength="12"
             app:endIconMode="password_toggle"
             app:helperText="enter strong password"
             app:helperTextTextColor="#EB21B65D"
-            android:hint="@string/password"
+            app:hintTextColor="@color/button_colour"
             app:startIconCheckable="false"
             app:startIconDrawable="@drawable/password">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputLogpassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -102,11 +104,12 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/postJobButton"
+            android:id="@+id/signIn"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
+            android:backgroundTint="@color/button_colour"
             android:text="@string/sign_text"
             android:textColor="#FFFFFF"
             />
@@ -116,6 +119,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
+            android:textColor="@color/button_colour"
             android:text="new User!   "
             style="@style/Widget.MaterialComponents.Button.TextButton"
             />
@@ -125,8 +129,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="@color/button_colour"
             android:text="Sign with Google"
-            app:icon="@drawable/ic_google_icon"
+            android:drawableEnd="@drawable/ic_google_icon"
+
             style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
         />
 

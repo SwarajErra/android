@@ -8,10 +8,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="@color/navi_bar"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -20,10 +22,13 @@
             android:layout_gravity="start"
             android:contentDescription="@string/titlabar_logo"
             app:srcCompat="@drawable/titlebar_logo" />
+    </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="75dp"
+            android:background="@color/app_backgound"
             android:baselineAligned="false"
             android:gravity="center"
             android:orientation="horizontal">
@@ -56,5 +61,4 @@
                 android:button="@null"
                 android:contentDescription="@string/company_logo" />
         </LinearLayout>
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
