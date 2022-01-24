@@ -13,6 +13,9 @@
             android:name=".postNewJobActivity"
             android:exported="false" />
         <activity
+            android:name=".postedjob_screen"
+             />
+        <activity
             android:name=".signUpActivity"
             android:exported="false" />
         <activity

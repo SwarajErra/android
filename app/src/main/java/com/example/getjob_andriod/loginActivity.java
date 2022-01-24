@@ -62,13 +62,7 @@ public class loginActivity extends AppCompatActivity {
             }
         });
 
-        signWithGoogle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent= new Intent(loginActivity.this,googlesignin.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 
