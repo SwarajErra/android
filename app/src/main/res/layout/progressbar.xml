@@ -6,10 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".postedjob_screen">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navi_bar"
+        tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        android:layout_gravity="start"
+        android:contentDescription="@string/titlabar_logo"
+        android:src="@drawable/titlebar_logo"
+        tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
     <!--Recycler view for displaying
         our data from Firestore-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVCourses"
+        android:layout_marginTop="75dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
