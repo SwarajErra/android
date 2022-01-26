@@ -130,6 +130,8 @@ public class UpdatedPostjob extends AppCompatActivity {
                         // on successful completion of this process
                         // we are displaying the toast message.
                         Toast.makeText(UpdatedPostjob.this, "Course has been updated..", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(UpdatedPostjob.this, postedjob_screen.class);
+                        startActivity(i);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
             // inside on failure method we are
