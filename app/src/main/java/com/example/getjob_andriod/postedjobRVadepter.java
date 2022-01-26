@@ -1,6 +1,8 @@
 package com.example.getjob_andriod;
 
-import android.content.Context;
+import
+        android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +40,8 @@ public class postedjobRVadepter extends RecyclerView.Adapter<postedjobRVadepter.
         holder.jobType.setText(postJob.getjobType());
         holder.payRate.setText(postJob.getpayRate());
         holder.reqQua.setText(postJob.getReqqua());
+        holder.shift.setText(postJob.getShift());
+
 
     }
 
@@ -65,6 +69,29 @@ public class postedjobRVadepter extends RecyclerView.Adapter<postedjobRVadepter.
             payRate=itemView.findViewById(R.id.payRate);
             reqQua=itemView.findViewById(R.id.reqQua);
             shift=itemView.findViewById(R.id.shift);
+
+
+
+            // here we are adding on click listener
+            // for our item of recycler view.
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    // after clicking of the item of recycler view.
+                    // we are passing our course object to the new activity.
+                    postjobhelper postJob = postJobArrayList.get(getAdapterPosition());
+
+                    // below line is creating a new intent.
+                    Intent i = new Intent(context, UpdatedPostjob.class);
+
+                    // below line is for putting our course object to our next activity.
+                    i.putExtra("PostJob", postJob);
+
+                    // after passing the data we are starting our activity.
+                    context.startActivity(i);
+                }
+            });
         }
     }
 }

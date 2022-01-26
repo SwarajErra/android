@@ -1,8 +1,25 @@
 package com.example.getjob_andriod;
+import com.google.firebase.firestore.Exclude;
 
+import java.io.Serializable;
 
-public class postjobhelper {
+public class postjobhelper implements Serializable{
     String companyName,jobDescription,CompanyLocation,payRate,jobType,shift,reqqua;
+
+    // getter method for our id
+    public String getId() {
+        return id;
+    }
+    // setter method for our id
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    // we are using exclude because
+    // we are not saving our id
+    @Exclude
+    private String id;
+
 
     public postjobhelper() {
 
@@ -62,8 +79,8 @@ public class postjobhelper {
         return shift;
     }
 
-    public void setShift(String shift) {
-        this.shift = shift;
+    public void setShift(String Shift) {
+        this.shift = Shift;
     }
 
     public String getReqqua() {

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdatedPostjob">
+
+    <!--Edittext for getting course Name-->
+
+
+    <!--Edittext for getting course Duration-->
+    <EditText
+        android:id="@+id/idEdtcompanyLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="companyLocation"
+        android:importantForAutofill="no"
+        android:inputType="time" />
+
+    <!--Edittext for getting course Description-->
+    <EditText
+        android:id="@+id/idEdtcompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Course Description"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/idEdtjobDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="jobDescription"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/idEdtjobType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="jobType"
+        android:importantForAutofill="no"
+        android:inputType="time" />
+
+
+    <EditText
+        android:id="@+id/idEdtpayRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="payRate"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/idEdtreqQua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Experience"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/idEdtshift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="shift"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+
+    <!--Button for updating your course to Firebase-->
+
+    <Button
+        android:id="@+id/idBtnUpdateCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_colour"
+        android:text="update job"
+        android:layout_margin="10dp"
+        android:layout_weight="0.5"/>
+    <Button
+        android:id="@+id/idBtnDeleteCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_colour"
+        android:layout_margin="10dp"
+        android:layout_weight="0.5"
+        android:text="Delete job" />
+
+
+
+</LinearLayout>

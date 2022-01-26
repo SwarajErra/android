@@ -32,7 +32,6 @@ public class postJobActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.postjob);
         db=FirebaseFirestore.getInstance();
-
         Regjobtitle=findViewById(R.id.jobtitle);
         Regjobdis=findViewById(R.id.jobdis);
         Reglocation=findViewById(R.id.location);
@@ -40,7 +39,6 @@ public class postJobActivity extends AppCompatActivity {
         Regjobtype=findViewById(R.id.jobtype);
         Regshift=findViewById(R.id.shifts);
         Regreqqua=findViewById(R.id.reqqua);
-
         postjob=findViewById(R.id.postjob);
         postnewjob=findViewById(R.id.postnewjob);
 

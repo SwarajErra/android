@@ -57,11 +57,23 @@ public class postedjob_screen extends AppCompatActivity {
                    // that list to our object class.
                    postjobhelper p = d.toObject(postjobhelper.class);
 
+
+                   // below is the updated line of code which we have to
+                   // add to pass the document id inside our modal class.
+                   // we are setting our document id with d.getId() method
+                   p.setId(d.getId());
+
+
+
+
                    // and we will pass this object class
                    // inside our arraylist which we have
                    // created for recycler view.
 
                    postjobArrayList.add(p);
+
+
+
                }
                postedjobRVadepter.notifyDataSetChanged();
            } else {

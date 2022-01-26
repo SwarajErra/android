@@ -10,11 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GetJob_Andriod">
         <activity
-            android:name=".postNewJobActivity"
+            android:name=".UpdatedPostjob"
             android:exported="false" />
         <activity
-            android:name=".postedjob_screen"
-             />
+            android:name=".EditJob"
+            android:exported="false" />
+        <activity
+            android:name=".postNewJobActivity"
+            android:exported="false" />
+        <activity android:name=".postedjob_screen" />
         <activity
             android:name=".signUpActivity"
             android:exported="false" />
