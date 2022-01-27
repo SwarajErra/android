@@ -26,10 +26,7 @@
 
     </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp">
+
 
     <LinearLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -45,54 +42,49 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
                 android:id="@+id/filledTextField"
                 android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                app:boxBackgroundColor="@color/white"
-                android:hint="@string/keyword_hint">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:boxBackgroundColor="@color/white"
+            android:hint="@string/keyword_hint"
+            android:inputType="text"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent" />
+                        <Button
+                            android:id="@+id/searchButton"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:textColor="#000000"
+                            app:icon="@drawable/search_icon" />
+                    </LinearLayout>
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <ScrollView
 
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:fillViewport="true"
+                        android:scrollbars = "vertical"
+                        android:scrollbarStyle="insideInset"
+                        tools:ignore="MissingConstraints">
 
-            <Button
-                android:id="@+id/searchButton"
-                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:textColor="#000000"
-                app:icon="@drawable/search_icon" />
-        </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/homeCardLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
 
+                        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical">
+                    </LinearLayout>
 
-            <include
-                android:id="@+id/applyButton"
-                layout="@layout/job_card" />
+                    </ScrollView>
 
-            <include layout="@layout/job_card" />
-
-            <include layout="@layout/job_card" />
-
-            <include layout="@layout/job_card" />
-
-        </LinearLayout>
-
-
-    </LinearLayout>
-    </ScrollView>
+                </LinearLayout>
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>

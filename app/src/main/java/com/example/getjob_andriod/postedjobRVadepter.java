@@ -34,7 +34,7 @@ public class postedjobRVadepter extends RecyclerView.Adapter<postedjobRVadepter.
     @Override
     public void onBindViewHolder(@NonNull postedjobRVadepter.ViewHolder holder, int position) {
         postjobhelper postJob = postJobArrayList.get(position);
-        holder.companyLocation.setText(postJob.getCompanyLocation());
+        holder.companyLocation.setText(postJob.getcompanyLocation());
         holder.companyName.setText(postJob.getCompanyName());
         holder.jobDes.setText(postJob.getjobDescription());
         holder.jobType.setText(postJob.getjobType());

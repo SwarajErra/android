@@ -20,7 +20,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class postJobActivity extends AppCompatActivity {
     Button postjob,postnewjob;
     EditText Regjobtitle,Regjobdis,Reglocation,Regpayrate,Regjobtype,Regshift,Regreqqua;
-    String companyName,jobDescription,CompanyLocation,payRate,jobType,shift,reqqua;
+    String companyName,jobDescription,companyLocation,payRate,jobType,shift,reqqua;
     boolean pressAttention,reportJob;
 
 
@@ -62,7 +62,7 @@ public class postJobActivity extends AppCompatActivity {
 
                 companyName = Regjobtitle.getText().toString();
                 jobDescription = Regjobdis.getText().toString();
-                CompanyLocation = Reglocation.getText().toString();
+                companyLocation = Reglocation.getText().toString();
                 payRate = Regpayrate.getText().toString();
                 jobType = Regjobtype.getText().toString();
                 shift = Regshift.getText().toString();
@@ -72,7 +72,7 @@ public class postJobActivity extends AppCompatActivity {
                     Regjobtitle.setError("Please enter Job Title");
                 } else if (TextUtils.isEmpty(jobDescription)) {
                     Regjobdis.setError("Please enter Job Description");
-                } else if (TextUtils.isEmpty(CompanyLocation)) {
+                } else if (TextUtils.isEmpty(companyLocation)) {
                     Reglocation.setError("Please enter location");
                 } else if (TextUtils.isEmpty(payRate)) {
                     Regpayrate.setError("Please enter payrate");
@@ -85,7 +85,7 @@ public class postJobActivity extends AppCompatActivity {
                 }
                 else {
                     // calling method to add data to Firebase Firestore.
-                    addDataToFirestore(companyName,jobDescription,CompanyLocation,payRate,jobType,shift,reqqua);
+                    addDataToFirestore(companyName,jobDescription,companyLocation,payRate,jobType,shift,reqqua);
                 }
 
 
@@ -93,12 +93,12 @@ public class postJobActivity extends AppCompatActivity {
         });
     }
 
-    private void addDataToFirestore(String companyName, String jobDescription, String CompanyLocation, String payRate, String jobType, String shift, String reqqua)
+    private void addDataToFirestore(String companyName, String jobDescription, String companyLocation, String payRate, String jobType, String shift, String reqqua)
     {
 
         CollectionReference dbpostjobdb = db.collection("PostJob");
 
-        postjobhelper jobhelper = new postjobhelper(companyName,jobDescription,CompanyLocation,payRate,jobType,shift,reqqua);
+        postjobhelper jobhelper = new postjobhelper(companyName,jobDescription,companyLocation,payRate,jobType,shift,reqqua);
 
         dbpostjobdb.add(jobhelper).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
             @Override

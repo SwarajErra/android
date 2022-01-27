@@ -20,10 +20,10 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class UpdatedPostjob extends AppCompatActivity {
 
     // creating variables for our edit text
-    private EditText CompanyLocationEdt,companyNameEdt,jobDescriptionEdt,payRateEdt,jobTypeEdt,shiftEdt,reqquaEdt;
+    private EditText companyLocationEdt,companyNameEdt,jobDescriptionEdt,payRateEdt,jobTypeEdt,shiftEdt,reqquaEdt;
 
     // creating a strings for storing our values from Edittext fields.
-    String CompanyLocation,companyName,jobDescription,payRate,jobType,shift,reqqua;
+    String companyLocation,companyName,jobDescription,payRate,jobType,shift,reqqua;
     // creating a variable for firebasefirestore.
     private FirebaseFirestore db;
 
@@ -35,7 +35,7 @@ public class UpdatedPostjob extends AppCompatActivity {
 
         // getting our instance from Firebase Firestore.
         db = FirebaseFirestore.getInstance();
-        CompanyLocationEdt=findViewById(R.id.idEdtcompanyLocation);
+        companyLocationEdt=findViewById(R.id.idEdtcompanyLocation);
         companyNameEdt=findViewById(R.id.idEdtcompanyName);
         jobDescriptionEdt=findViewById(R.id.idEdtjobDescription);
         jobTypeEdt=findViewById(R.id.idEdtjobType);
@@ -47,7 +47,7 @@ public class UpdatedPostjob extends AppCompatActivity {
         // creating variable for button
         Button updateCOurseBtn = findViewById(R.id.idBtnUpdateCourse);
         Button deleteBtn = findViewById(R.id.idBtnDeleteCourse);
-        CompanyLocationEdt.setText(courses.getCompanyLocation());
+        companyLocationEdt.setText(courses.getcompanyLocation());
         companyNameEdt.setText(courses.getCompanyName());
         jobDescriptionEdt.setText(courses.getjobDescription());
         jobTypeEdt.setText(courses.getjobType());
@@ -69,7 +69,7 @@ public class UpdatedPostjob extends AppCompatActivity {
         updateCOurseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CompanyLocation = CompanyLocationEdt.getText().toString();
+                companyLocation = companyLocationEdt.getText().toString();
                 companyName = companyNameEdt.getText().toString();
                 jobDescription = jobDescriptionEdt.getText().toString();
                 jobType = jobTypeEdt.getText().toString();
@@ -82,8 +82,8 @@ public class UpdatedPostjob extends AppCompatActivity {
                     companyNameEdt.setError("Please enter Job Title");
                 } else if (TextUtils.isEmpty(jobDescription)) {
                     jobDescriptionEdt.setError("Please enter Job Description");
-                } else if (TextUtils.isEmpty(CompanyLocation)) {
-                    CompanyLocationEdt.setError("Please enter location");
+                } else if (TextUtils.isEmpty(companyLocation)) {
+                    companyLocationEdt.setError("Please enter location");
                 } else if (TextUtils.isEmpty(payRate)) {
                     payRateEdt.setError("Please enter payrate");
                 }else if (TextUtils.isEmpty(jobType)) {
@@ -95,7 +95,7 @@ public class UpdatedPostjob extends AppCompatActivity {
                 }
                 else {
                     // calling a method to update our course.
-                     updatePostJob(courses,CompanyLocation,companyName,jobDescription,payRate,jobType,shift,reqqua);
+                     updatePostJob(courses,companyLocation,companyName,jobDescription,payRate,jobType,shift,reqqua);
                 }
 
 
@@ -103,11 +103,11 @@ public class UpdatedPostjob extends AppCompatActivity {
         });
     }
 
-    private void updatePostJob(postjobhelper courses, String CompanyLocation, String companyName, String jobDescription, String payRate, String jobType, String shift, String reqqua) {
+    private void updatePostJob(postjobhelper courses, String companyLocation, String companyName, String jobDescription, String payRate, String jobType, String shift, String reqqua) {
         // inside this method we are passing our updated values
         // inside our object class and later on we
         // will pass our whole object to firebase Firestore.
-        postjobhelper updatedCourse = new postjobhelper(companyName,jobDescription,CompanyLocation,payRate,jobType,shift,reqqua);
+        postjobhelper updatedCourse = new postjobhelper(companyName,jobDescription,companyLocation,payRate,jobType,shift,reqqua);
 
         // after passing data to object class we are
         // sending it to firebase with specific document id.

@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="button_colour">#4DAF51</color>
+    <color name="green">#4DAF51</color>
+    <color name="blue">#6676CF</color>
     <color name="navi_bar">#c6f68d</color>
     <color name="app_backgound">#defabb</color>
 

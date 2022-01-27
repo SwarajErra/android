@@ -12,12 +12,14 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="8dp">
+        android:theme="@style/Theme.MaterialComponents.DayNight"
+        >
 
         <LinearLayout
+            android:id="@+id/cardLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#E4E2E2"
+            android:background="@drawable/border"
             android:orientation="vertical">
 
             <LinearLayout
@@ -28,48 +30,61 @@
 
                 <!-- Title, secondary and supporting text -->
                 <TextView
+                    android:id="@+id/companyName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Senior Angular Developer"
+                    android:text="Company Name : "
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <TextView
+                    android:id="@+id/companyLocation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Novatek International, Montreal, QC."
-                    android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="?android:attr/textColorSecondary" />
+                    android:text="Company Location : "
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <TextView
+                    android:id="@+id/jobDescription"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="Write short paragraphs and cover one topic per paragraph. Long paragraphs discourage users from even trying to understand your material. Short paragraphs are easier to read and understand. Writing experts recommend paragraphs of no more than 150 words in three to eight sentences."
-                    android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="?android:attr/textColorSecondary" />
+                    android:text="Job Description : "
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
 
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/jobType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Job Type : "
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
 
-            <!-- Buttons -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/payRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Pay Rate : "
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <Button
                     android:id="@+id/ApplyButton"
                     android:layout_width="142dp"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:text="Apply Now" />
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#6676CF"
+                    android:text="Apply Now"
+                    android:textColor="#000000" />
             </LinearLayout>
+
+
 
 
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+

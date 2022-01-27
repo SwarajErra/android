@@ -4,7 +4,7 @@ import com.google.firebase.firestore.Exclude;
 import java.io.Serializable;
 
 public class postjobhelper implements Serializable{
-    String companyName,jobDescription,CompanyLocation,payRate,jobType,shift,reqqua;
+    String companyName,jobDescription,companyLocation,payRate,jobType,shift,reqqua;
 
     // getter method for our id
     public String getId() {
@@ -25,10 +25,10 @@ public class postjobhelper implements Serializable{
 
     }
 
-    public postjobhelper(String companyName, String jobDescription, String CompanyLocation, String payRate, String jobType, String shift, String reqqua) {
+    public postjobhelper(String companyName, String jobDescription, String companyLocation, String payRate, String jobType, String shift, String reqqua) {
         this.companyName = companyName;
         this.jobDescription = jobDescription;
-        this.CompanyLocation = CompanyLocation;
+        this.companyLocation = companyLocation;
         this.payRate = payRate;
         this.jobType = jobType;
         this.shift = shift;
@@ -51,12 +51,12 @@ public class postjobhelper implements Serializable{
         this.jobDescription = jobDescription;
     }
 
-    public String getCompanyLocation() {
-        return CompanyLocation;
+    public String getcompanyLocation() {
+        return companyLocation;
     }
 
-    public void setCompanyLocation(String CompanyLocation) {
-        this.CompanyLocation = CompanyLocation;
+    public void setcompanyLocation(String companyLocation) {
+        this.companyLocation = companyLocation;
     }
 
     public String getpayRate() {
